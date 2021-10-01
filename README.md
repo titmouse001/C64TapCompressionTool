@@ -1,4 +1,4 @@
-# C64TapCompressionTool
+# C64 Tap Compression Tool
  C64 tap file compression support for the [Tapuino with packed file loading] project
 
 This tool finds and compresses all TAP files inside a given folder
