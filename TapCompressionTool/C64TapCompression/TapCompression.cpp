@@ -390,7 +390,7 @@ u8* LZLikeDecode(u8 *out, u8 *in, u8 *end) {
 
 
 u8* LZLikeEncode(u8 *out, u8 *in, u8 *end) {
-	int i = 0;
+//	int i = 0;
 	u8* pcurrentBlockStart = in;
 	while (pcurrentBlockStart < end) {
 		u16 byteOrOffset = *pcurrentBlockStart;
@@ -408,7 +408,7 @@ u8* LZLikeEncode(u8 *out, u8 *in, u8 *end) {
 				if (len > repetitionLength) {
 					repetitionLength = len;    // found a sequence in the past
 					byteOrOffset = wi;		   // distance we looked back in bytes
-					i++;
+			//		i++;
 
 					if (len == REPEAT_LIMIT)
 						break;
@@ -430,6 +430,9 @@ u8* LZLikeEncode(u8 *out, u8 *in, u8 *end) {
 
 	return out;
 }
+
+// debug, vs config props, cmd args use :  "C:\\Users\\Admin\\Desktop\\New folder\\"
+
 #include <windows.h>
 int main(int argc, char **argv)
 {
@@ -475,6 +478,8 @@ int main(int argc, char **argv)
 	WIN32_FIND_DATAA ffd;
 
 	printf("%s\n" , folder.c_str());
+
+// todo missing end will crash \\ 
 
 	HANDLE  hFind = FindFirstFileA((folder + "*.tap").c_str(), &ffd);
 
@@ -562,7 +567,7 @@ int main(int argc, char **argv)
 	printf("saving %d bytes, %dKB, %dMB \n", totalOriginal - totalCompressed, (totalOriginal - totalCompressed)/1024, (totalOriginal - totalCompressed)/1024/1024);
 	printf("=========================\n");
 	
-//	getchar();
+	getchar();
 
 
 }

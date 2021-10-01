@@ -1,0 +1,13 @@
+*.obj
+*.exe
+*.pdb
+*.db
+*.iobj
+*.ipdb
+*.ipch
+*.pch
+*.log
+*.tlog
+*.aps
+.vs/
+
