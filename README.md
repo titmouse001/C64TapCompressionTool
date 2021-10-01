@@ -3,7 +3,11 @@
 
 This tool finds and compresses all TAP files inside a given folder
  - Orignal TAP files will not deleted
- - Compressed files will be created with a 'zap' file extension
+ - Compressed files are called .zap files
+ - Tap files are still supported 
+ -   - you can mix both tap and zap files together
+ - Example savings
+   - Zybex.tap (881KB) -> Zybex.zap (89KB)
 
 ----
 Example usage:  
