@@ -9,5 +9,7 @@
 *.log
 *.tlog
 *.aps
+*.user
 .vs/
+debug/
 
