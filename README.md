@@ -1,6 +1,6 @@
 # C64 Tap Compression Tool
  C64 tap file compression support for the [Tapuino with packed file loading] project  
- Credit goes charcole for the [Origianl Idea], nice.
+ Credit goes Charcole for the [Origianl Idea], nice.
 
 This tool finds and compresses all TAP files inside a given folder
  - Orignal TAP files will not deleted
