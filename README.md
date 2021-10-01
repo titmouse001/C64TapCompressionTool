@@ -18,5 +18,6 @@ Example usage:
 - TapCompression.exe \[c:\data\c64\yourTaps\\]  
   - ...absolute path
 
+(code is in a mess and lots of old stuff left in, now I'm on github... I'll sort that out in the next week or so)
 
 [Tapuino with packed file loading]: https://github.com/titmouse001/tapuino-with-packed-file-loading
